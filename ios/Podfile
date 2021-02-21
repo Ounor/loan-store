@@ -10,6 +10,10 @@ target 'loan_store' do
 
   pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
 
+  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
+
+  pod 'RNLocalize', :path => '../node_modules/react-native-localize'
+
   target 'loan_storeTests' do
     inherit! :complete
     # Pods for testing
