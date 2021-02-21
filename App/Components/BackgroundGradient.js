@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import LinearGradient from 'react-native-linear-gradient';
-
+//252525252
 export default class BottomModal extends Component {
   render() {
     return (
