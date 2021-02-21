@@ -300,7 +300,7 @@ export default class CalculatorScreen extends PureComponent {
                             setFieldValue('periodType', 'year');
                           }}
                           style={[styles.row, styles.radio]}>
-                          <RadioButton.Android color="#1e793c" value="year" />
+                          <RadioButton.Android color="#43ba7b" value="year" />
                           <Translate value="year" />
                         </TouchableOpacity>
                         <TouchableOpacity
@@ -310,7 +310,7 @@ export default class CalculatorScreen extends PureComponent {
                             setFieldValue('percentType', 'day');
                           }}
                           style={[styles.row, styles.radio]}>
-                          <RadioButton.Android color="#1e793c" value="day" />
+                          <RadioButton.Android color="#43ba7b" value="day" />
                           <Translate value="day" />
                         </TouchableOpacity>
                       </View>
@@ -354,7 +354,7 @@ export default class CalculatorScreen extends PureComponent {
                               setFieldValue('periodType', 'day');
                             }}
                             style={[styles.row, styles.radio]}>
-                            <RadioButton.Android color="#1e793c" value="day" />
+                            <RadioButton.Android color="#43ba7b" value="day" />
                             <Translate value="day" />
                           </TouchableOpacity>
                         ) : (
@@ -365,7 +365,7 @@ export default class CalculatorScreen extends PureComponent {
                               }}
                               style={[styles.row, styles.radio]}>
                               <RadioButton.Android
-                                color="#1e793c"
+                                color="#43ba7b"
                                 value="year"
                               />
                               <Translate value="year" />
@@ -376,7 +376,7 @@ export default class CalculatorScreen extends PureComponent {
                               }}
                               style={[styles.row, styles.radio]}>
                               <RadioButton.Android
-                                color="#1e793c"
+                                color="#43ba7b"
                                 value="month"
                               />
                               <Translate value="month" />
@@ -454,7 +454,7 @@ export default class CalculatorScreen extends PureComponent {
                             setFieldValue('comisionType', 'sum');
                           }}
                           style={[styles.row, styles.radio]}>
-                          <RadioButton.Android color="#1e793c" value="sum" />
+                          <RadioButton.Android color="#43ba7b" value="sum" />
                           <Translate value="sum" />
                         </TouchableOpacity>
                         <TouchableOpacity
@@ -463,7 +463,7 @@ export default class CalculatorScreen extends PureComponent {
                           }}
                           style={[styles.row, styles.radio]}>
                           <RadioButton.Android
-                            color="#1e793c"
+                            color="#43ba7b"
                             value="percent"
                           />
                           <Translate value="percent" />
@@ -500,7 +500,7 @@ export default class CalculatorScreen extends PureComponent {
                             setFieldValue('monthComisionType', 'sum');
                           }}
                           style={[styles.row, styles.radio]}>
-                          <RadioButton.Android color="#1e793c" value="sum" />
+                          <RadioButton.Android color="#43ba7b" value="sum" />
                           <Translate value="sum" />
                         </TouchableOpacity>
                         <TouchableOpacity
@@ -509,7 +509,7 @@ export default class CalculatorScreen extends PureComponent {
                           }}
                           style={[styles.row, styles.radio]}>
                           <RadioButton.Android
-                            color="#1e793c"
+                            color="#43ba7b"
                             value="percent"
                           />
                           <Translate value="percent" />

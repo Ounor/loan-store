@@ -107,7 +107,7 @@ export default class Offer extends Component {
           <LinearGradient
             start={{x: 0, y: 0}}
             end={{x: 1, y: 0}}
-            colors={['#1e793c', '#1e793c']}
+            colors={['#43ba7b', '#43ba7b']}
             style={styles.buttonStyleOrder}>
             {modality ? (
               <Translate style={styles.buttonTextOrder} value={'order'} />

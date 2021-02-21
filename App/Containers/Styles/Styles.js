@@ -49,14 +49,19 @@ export default StyleSheet.create({
     fontSize: 15,
     color: 'white',
     fontWeight: '700',
+    textAlign: 'center',
     lineHeight: 25,
     fontFamily: 'ProximaNovaExtraBold',
+    flex: 1,
   },
   buttonStyle: {
-    alignItems: 'center',
     flexDirection: 'row',
     paddingHorizontal: 16,
     paddingVertical: 16,
+    backgroundColor: '#43ba7b',
+    marginBottom: 16,
+    marginHorizontal: 16,
+    borderRadius: 16,
   },
   button: {
     marginBottom: 16,
@@ -84,6 +89,7 @@ export default StyleSheet.create({
   },
   buttonTextOrder: {
     textAlign: 'center',
+    textTransform: 'uppercase',
     fontSize: 15,
     lineHeight: 50,
     color: 'white',
@@ -135,7 +141,7 @@ export default StyleSheet.create({
   },
   activeBtn: {
     color: 'white',
-    backgroundColor: '#1e793c',
+    backgroundColor: '#43ba7b',
   },
   bankLogo: {
     width: 25,
@@ -193,7 +199,7 @@ export default StyleSheet.create({
   },
   submitBtn: {
     borderRadius: 8,
-    backgroundColor: '#1e793c',
+    backgroundColor: '#43ba7b',
     padding: 16,
   },
   textCenter: {
@@ -234,7 +240,7 @@ export default StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 90,
-    backgroundColor: '#1e793c',
+    backgroundColor: '#43ba7b',
     marginRight: 16,
     padding: 8,
   },
