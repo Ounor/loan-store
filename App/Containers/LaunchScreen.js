@@ -46,44 +46,14 @@ class LaunchScreen extends PureComponent {
       <TouchableOpacity
         onPress={this.handleNavigateByType(item)}
         key={item.id}
-        style={styles.button}>
-        <LinearGradient
-          start={{x: 0, y: 0}}
-          end={{x: 1, y: 0}}
-          colors={['#1e793c', '#1e793c']}
-          style={styles.buttonStyle}>
-          <Image
-            source={{
-              uri: item.image,
-            }}
-            style={isAdver ? styles.adver : styles.bankLogo}
-          />
-          <View>
-            <Text style={styles.textStyle}>{item.name}</Text>
-            {item.description ? <Text>{item.description}</Text> : null}
-          </View>
-          {isAdver ? <Text style={styles.adverText}>Реклама</Text> : null}
-        </LinearGradient>
-      </TouchableOpacity>
+        style={styles.button}
+      />
     ) : (
       <TouchableOpacity
         onPress={this.handleNavigateByType(item)}
         key={item.id}
         style={styles.buttonStyle}>
-        <View style={styles.roundImageContainer}>
-          <Image
-            source={{
-              uri: item.image,
-            }}
-            style={styles.roundImage}
-          />
-        </View>
-
-        <View>
-          <Text style={styles.textStyleWhite}>
-            {upperFirst(toLower(item.name))}
-          </Text>
-        </View>
+        <Text style={styles.textStyleWhite}>{item.name}</Text>
       </TouchableOpacity>
     );
   };
@@ -109,20 +79,24 @@ class LaunchScreen extends PureComponent {
       <LinearGradient
         start={{x: 0, y: 0}}
         end={{x: 0, y: 1}}
-        colors={['#1d0c3f', '#2b788f']}
+        colors={['#fff', '#fff']}
         style={{flex: 1, position: 'absolute', top: 0, bottom: 0, zIndex: 1}}>
         <ScrollView centerContent style={styles.mainContainer}>
           {loaded && buttons ? (
             map(buttons, (item) => this.renderItem(item))
           ) : (
-            <ActivityIndicator color="white" size="large" />
+            <ActivityIndicator
+              color="#3e4956"
+              size="large"
+              style={{marginTop: '15%'}}
+            />
           )}
         </ScrollView>
         {loaded ? (
           <TouchableOpacity onPress={this.handleShowDisclaimer}>
             <Text
               style={{
-                color: 'white',
+                color: 'black',
                 textAlign: 'right',
                 padding: 16,
                 fontSize: 16,

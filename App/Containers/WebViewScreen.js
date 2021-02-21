@@ -27,7 +27,7 @@ export default class WebViewScreen extends Component {
               right: '50%',
             }}
             size="large"
-            color="#1e793c"
+            color="#43ba7b"
           />
         )}
       </View>

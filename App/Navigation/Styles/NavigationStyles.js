@@ -11,12 +11,13 @@ export default StyleSheet.create({
     alignItems: 'center',
     height: Platform.OS === 'ios' ? 120 - StatusBarHeight : 65,
     paddingTop: StatusBarHeight,
-    backgroundColor: '#1e793c',
+    backgroundColor: '#43ba7b',
   },
   logoTitle: {
     marginLeft: 16,
     fontSize: 20,
-    color: 'white',
+    color: '#10ce19',
+    fontWeight: '500',
   },
   logoStyle: {
     marginLeft: 16,

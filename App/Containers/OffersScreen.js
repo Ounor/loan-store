@@ -131,7 +131,7 @@ class OffersScreen extends Component {
                   {item.name}
                 </Text>
                 <Checkbox.Android
-                  color="#1e793c"
+                  color="#43ba7b"
                   status={
                     includes(this.state.selectedFilter, Number(item.id))
                       ? 'checked'
@@ -151,7 +151,7 @@ class OffersScreen extends Component {
               <Text style={{fontSize: 15, marginVertical: 8, width: '70%'}}>
                 По рейтингу
               </Text>
-              <RadioButton color="#1e793c" value="rating" />
+              <RadioButton color="#43ba7b" value="rating" />
             </TouchableOpacity>
             <TouchableOpacity
               onPress={this.onValueChange('name')}
@@ -159,7 +159,7 @@ class OffersScreen extends Component {
               <Text style={{fontSize: 15, marginVertical: 8, width: '70%'}}>
                 По названию
               </Text>
-              <RadioButton color="#1e793c" value="name" />
+              <RadioButton color="#43ba7b" value="name" />
             </TouchableOpacity>
           </RadioButton.Group>
         </TouchableOpacity>

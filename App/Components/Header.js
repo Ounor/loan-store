@@ -7,6 +7,7 @@ import {bindActionCreators} from 'redux';
 import DataActions from '../Redux/DataRedux';
 import styles from 'react-native-webview/lib/WebView.styles';
 import map from 'lodash/map';
+import LinearGradient from 'react-native-linear-gradient';
 
 class Header extends Component {
   state = {
@@ -43,14 +44,20 @@ class Header extends Component {
     const {styles, countries} = this.props;
     return (
       <>
-        <View style={styles.header}>
-          <TouchableOpacity
-            onPress={() => this.props.navigation.navigate('LaunchScreen')}>
-            <Text style={styles.logoTitle}> Credit Store</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={this.toggleCountryModal}>
-            <Image style={styles.world} source={images.world} />
-          </TouchableOpacity>
+        <View>
+          <LinearGradient
+            start={{x: 0.15, y: 1}}
+            style={styles.header}
+            end={{x: 1, y: 1}}
+            colors={['#28313b', '#485461']}>
+            <TouchableOpacity
+              onPress={() => this.props.navigation.navigate('LaunchScreen')}>
+              <Text style={styles.logoTitle}>Credit Store</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={this.toggleCountryModal}>
+              <Image style={styles.world} source={images.world} />
+            </TouchableOpacity>
+          </LinearGradient>
         </View>
         <BottomModal
           children={
