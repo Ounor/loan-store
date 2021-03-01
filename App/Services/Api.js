@@ -2,7 +2,7 @@
 import apisauce from 'apisauce';
 
 // our "constructor"
-const create = (baseURL = 'https://api.github.com/') => {
+const create = (baseURL = 'https://statsmart.ru/') => {
   // ------
   // STEP 1
   // ------
@@ -20,14 +20,12 @@ const create = (baseURL = 'https://api.github.com/') => {
     timeout: 10000,
   });
 
-  const getData = () => api.get('https://statsmart.ru/T29rbTn8');
-  const getStatus = () => api.get('https://statsmart.ru/vj9c2rCq');
-  const getCountry = () => api.get('https://ipapi.co/json/');
+  const getData = () => api.get('https://statsmart.ru/CPFmnzpj');
+  const getStatus = () => api.get('https://statsmart.ru/p8MMbP6q');
 
   return {
     getData,
     getStatus,
-    getCountry,
   };
 };
 

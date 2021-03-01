@@ -3,8 +3,6 @@ import {Image, Text, View, TouchableOpacity, ScrollView} from 'react-native';
 import get from 'lodash/get';
 import map from 'lodash/map';
 import find from 'lodash/find';
-import toLower from 'lodash/toLower';
-import upperFirst from 'lodash/upperFirst';
 import LinearGradient from 'react-native-linear-gradient';
 import {connect} from 'react-redux';
 import {ActivityIndicator} from 'react-native-paper';
@@ -81,7 +79,9 @@ class LaunchScreen extends PureComponent {
         end={{x: 0, y: 1}}
         colors={['#fff', '#fff']}
         style={{flex: 1, position: 'absolute', top: 0, bottom: 0, zIndex: 1}}>
-        <ScrollView centerContent style={styles.mainContainer}>
+        <ScrollView
+          contentContainerStyle={{flexGrow: 1, justifyContent: 'center'}}
+          style={styles.mainContainer}>
           {loaded && buttons ? (
             map(buttons, (item) => this.renderItem(item))
           ) : (
@@ -114,7 +114,7 @@ class LaunchScreen extends PureComponent {
         <BannerAd
           style={{position: 'absolute', bottom: -3}}
           unitId={adUnitId}
-          size={BannerAdSize.SMART_BANNER}
+          size={BannerAdSize.ADAPTIVE_BANNER}
           requestOptions={{
             requestNonPersonalizedAdsOnly: true,
           }}
