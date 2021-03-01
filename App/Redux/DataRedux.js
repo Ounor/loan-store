@@ -32,7 +32,7 @@ export const locationSuccess = (state, {country}) => {
 };
 
 export const appStatusSuccess = (state, {status}) => {
-  return state.merge(JSON.parse(status.data));
+  return state.merge(status);
 };
 
 export const setCountry = (state, {country}) => {

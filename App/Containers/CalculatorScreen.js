@@ -543,7 +543,7 @@ export default class CalculatorScreen extends PureComponent {
         <BannerAd
           style={{position: 'absolute', bottom: -3, backgroundColor: 'red'}}
           unitId={adUnitId}
-          size={BannerAdSize.SMART_BANNER}
+          size={BannerAdSize.ADAPTIVE_BANNER}
           requestOptions={{
             requestNonPersonalizedAdsOnly: true,
           }}

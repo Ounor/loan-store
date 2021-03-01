@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "601418653920",
+    "firebase_url": "https://finance-497d7.firebaseio.com",
+    "project_id": "finance-497d7",
+    "storage_bucket": "finance-497d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601418653920:android:d1f10d146775f628a7b085",
+        "android_client_info": {
+          "package_name": "com.credit_store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601418653920-p22c2j7mhsdjmjsuo1apf5r6sogc1hli.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArokHRNv_Bq5csqyr5cgQK4IvutUAT-iI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601418653920-p22c2j7mhsdjmjsuo1apf5r6sogc1hli.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "601418653920-2l8eokhicttb591odi6tddlbvtm4j78j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.ounor.loanhub"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601418653920:android:82c81c42e6abb281a7b085",
+        "android_client_info": {
+          "package_name": "com.loan_store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601418653920-p22c2j7mhsdjmjsuo1apf5r6sogc1hli.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArokHRNv_Bq5csqyr5cgQK4IvutUAT-iI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601418653920-p22c2j7mhsdjmjsuo1apf5r6sogc1hli.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "601418653920-2l8eokhicttb591odi6tddlbvtm4j78j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.ounor.loanhub"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

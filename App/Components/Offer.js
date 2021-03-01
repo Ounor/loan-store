@@ -17,7 +17,7 @@ export default class Offer extends Component {
     text: PropTypes.string,
     children: PropTypes.string,
     navigator: PropTypes.object,
-    modality: PropTypes.bool,
+    isWebview: PropTypes.bool,
   };
 
   handleToggle = () => {
@@ -47,7 +47,7 @@ export default class Offer extends Component {
 
   render() {
     const {isHidden, isVisible} = this.state;
-    const {item, isAdver, modality} = this.props;
+    const {item, isAdver, isWebview} = this.props;
     return (
       <View key={item.id} style={styles.offerCard}>
         {isAdver ? <Text style={styles.adverText}>Реклама</Text> : null}
@@ -74,7 +74,7 @@ export default class Offer extends Component {
             <Text style={isHidden && {display: 'none'}}>
               {item.description}
             </Text>
-            {modality ? (
+            {isWebview ? (
               <TouchableOpacity activeOpaity={1} onPress={this.handleToggle}>
                 {isHidden ? (
                   <Translate
@@ -102,14 +102,14 @@ export default class Offer extends Component {
         ) : null}
         <TouchableOpacity
           onPress={
-            modality ? this.handleNavigateByOffer : this.handleShowDescription
+            isWebview ? this.handleNavigateByOffer : this.handleShowDescription
           }>
           <LinearGradient
             start={{x: 0, y: 0}}
             end={{x: 1, y: 0}}
             colors={['#43ba7b', '#43ba7b']}
             style={styles.buttonStyleOrder}>
-            {modality ? (
+            {isWebview ? (
               <Translate style={styles.buttonTextOrder} value={'order'} />
             ) : (
               <Text style={styles.buttonTextOrder}>Подробнее</Text>

@@ -25,7 +25,7 @@ import images from '../Themes/Images';
 import styles from '../Containers/Styles/Styles';
 import BottomModal from '../Components/BottomModal';
 import {isEmpty} from 'ramda';
-import {BannerAd, BannerAdSize, TestIds} from '@react-native-firebase/admob';
+import {BannerAd, BannerAdSize} from '@react-native-firebase/admob';
 import {adUnitId} from '../Lib/ads';
 import LinearGradient from 'react-native-linear-gradient';
 
@@ -167,10 +167,10 @@ class OffersScreen extends Component {
     );
   };
   renderItem = ({item}) => {
-    const statusOK = this.props.appStatus;
+    const isWebview = this.props.appStatus === 'ok';
     return (
       <Offer
-        modality={statusOK !== 'oke'}
+        isWebview={isWebview}
         isAdver={Number(item.isAdver)}
         navigation={this.props.navigation}
         item={item}
@@ -233,7 +233,7 @@ class OffersScreen extends Component {
         <View>
           <BannerAd
             unitId={adUnitId}
-            size={BannerAdSize.SMART_BANNER}
+            size={BannerAdSize.ADAPTIVE_BANNER}
             requestOptions={{
               requestNonPersonalizedAdsOnly: true,
             }}
@@ -248,8 +248,7 @@ const mapStateProps = (state, ownProps) => {
   const id = ownProps.navigation.state.params.id;
   const {coreData} = state;
   return {
-    appStatus: get(coreData, 'appStatus', {}),
-
+    appStatus: get(coreData, 'status', ''),
     offers: get(coreData.offersByType, id, {}),
     filters: get(coreData.filtersByType, id),
   };
