@@ -167,10 +167,10 @@ class OffersScreen extends Component {
     );
   };
   renderItem = ({item}) => {
-    const isWebview = this.props.appStatus === 'ok';
+    const available = this.props.available;
     return (
       <Offer
-        isWebview={isWebview}
+        isAvailable={available}
         isAdver={Number(item.isAdver)}
         navigation={this.props.navigation}
         item={item}
@@ -248,7 +248,7 @@ const mapStateProps = (state, ownProps) => {
   const id = ownProps.navigation.state.params.id;
   const {coreData} = state;
   return {
-    appStatus: get(coreData, 'status', ''),
+    available: get(coreData, 'available', ''),
     offers: get(coreData.offersByType, id, {}),
     filters: get(coreData.filtersByType, id),
   };

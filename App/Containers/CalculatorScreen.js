@@ -132,7 +132,7 @@ export default class CalculatorScreen extends PureComponent {
               value={isDayPercent ? 'pay' : 'monthPay'}
             />
             <Text style={styles.resultContainerValue}>
-              {results.payment
+              {results.payment || results.paymentMin
                 ? creditType === 'ann'
                   ? numberFormat(results.payment, currency)
                   : `${numberFormat(

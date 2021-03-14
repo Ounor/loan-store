@@ -6,7 +6,7 @@ import find from 'lodash/find';
 import LinearGradient from 'react-native-linear-gradient';
 import {connect} from 'react-redux';
 import {ActivityIndicator} from 'react-native-paper';
-import {BannerAdSize, BannerAd, TestIds} from '@react-native-firebase/admob';
+import {BannerAdSize, BannerAd} from '@react-native-firebase/admob';
 import BottomModal from '../Components/BottomModal';
 
 // Styles
@@ -94,15 +94,15 @@ class LaunchScreen extends PureComponent {
         </ScrollView>
         {loaded ? (
           <TouchableOpacity onPress={this.handleShowDisclaimer}>
-            <Text
+            <Translate
               style={{
                 color: 'black',
                 textAlign: 'right',
                 padding: 16,
                 fontSize: 16,
-              }}>
-              Дисклеймер
-            </Text>
+              }}
+              value={'disclaimer'}
+            />
           </TouchableOpacity>
         ) : null}
         <BottomModal

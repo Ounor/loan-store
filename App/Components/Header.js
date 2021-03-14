@@ -52,7 +52,7 @@ class Header extends Component {
             colors={['#28313b', '#485461']}>
             <TouchableOpacity
               onPress={() => this.props.navigation.navigate('LaunchScreen')}>
-              <Text style={styles.logoTitle}>Credit Store</Text>
+              <Text style={styles.logoTitle}>Loan Store</Text>
             </TouchableOpacity>
             <TouchableOpacity onPress={this.toggleCountryModal}>
               <Image style={styles.world} source={images.world} />
